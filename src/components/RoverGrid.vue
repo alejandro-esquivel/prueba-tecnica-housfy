@@ -164,7 +164,8 @@ watch(
 
 <template>
   <div>
-    <table class="min-w-10/12 mx-auto table-auto border-collapse text-sm rounded-lg bg-white outline outline-white/5">
+    <table
+      class="min-w-10/12 lg:min-w-10/12 2xl:min-w-6/12 mx-auto table-auto border-collapse text-sm rounded-lg bg-white outline outline-white/5">
       <tr v-for="col, i in planetMap" :key="i" class="table-row">
         <td v-for="row, j in planetMap[i]" :key="j" class="w-10 h-24 text-center border-2 border-slate-600"
           :id="`map-x${i}-y${j}`">
