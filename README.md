@@ -70,3 +70,5 @@ src/
 ## Requisitos
 - Node.js
 - npm/yarn
+
+©️ 2025 - Alejandro Esquivel
