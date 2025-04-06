@@ -168,7 +168,7 @@ watch(
       <tr v-for="col, i in planetMap" :key="i" class="table-row">
         <td v-for="row, j in planetMap[i]" :key="j" class="w-10 h-24 text-center border-2 border-slate-600"
           :id="`map-x${i}-y${j}`">
-          <RoverIcon v-if="posicionActual.y == i && posicionActual.x == j" />
+          <RoverIcon v-if="posicionActual.y == i && posicionActual.x == j" :direccion="posicionActual.direction" />
           <span v-for="obs, o in posicionObstaculos" :key="o">
             <ObstacleIcon v-if="obs.y == i && obs.x == j" />
           </span>
