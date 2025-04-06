@@ -145,8 +145,10 @@ watch(
       const exito = ejecutarOrdenes(nuevasOrdenes);
 
       if (!exito) {
-        const obsX = posicionActual.value.x;
-        const obsY = posicionActual.value.y;
+        const direccionObs = DIRECCIONES[posicionActual.value.direction];
+
+        const obsX = posicionActual.value.x + + direccionObs.x;
+        const obsY = posicionActual.value.y + + direccionObs.y;
         Swal.fire({
           icon: 'warning',
           title: 'Obstáculo encontrado',
