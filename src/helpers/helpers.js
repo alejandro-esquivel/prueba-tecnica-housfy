@@ -25,3 +25,16 @@ export const generarPosicionesObstaculos = (numObstaculos, mapa, roverPosition) 
 
   return obstaculos;
 }
+
+export const validarCaracteres = (texto, caracteres) => {
+  let isValid = true;
+
+  for (let caracter of texto.toUpperCase()) {
+    if (!caracteres.includes(caracter)) {
+      isValid = false;
+      break;
+    }
+  }
+
+  return isValid;
+}
